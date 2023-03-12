@@ -1,0 +1,29 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Consistt/Ui/main/UnLeaked"))()
+
+
+library.rank = "scripter"
+local Wm = library:Watermark("cashware | v" .. library.version ..  " | " .. library:GetUsername() .. " | rank: " .. library.rank)
+local FpsWm = Wm:AddWatermark("fps: " .. library.fps)
+coroutine.wrap(function()
+    while wait(.75) do
+        FpsWm:Text("fps: " .. library.fps)
+    end
+end)()
+
+
+
+library.title = "Cashware.xyz"
+
+local Init = library:Init()
+
+local Tab1 = Init:NewTab("STEEP STEPS")
+
+local Label1 = Tab1:NewLabel(" Steep Steps ", "center")
+
+local Button1 = Tab1:NewButton("AC BYPASS", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lncoognito/ROBLOX/main/SteepStepsACBypass.lua", true))()
+end)
+
+local Button1 = Tab1:NewButton("iCucky GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iCuckyDev/RobloxScripts/main/Steep%20Steps"))()
+end)
