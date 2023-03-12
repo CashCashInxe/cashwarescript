@@ -1,5 +1,6 @@
 local games = {
     [{1962086868}] = "https://raw.githubusercontent.com/CashCashInxe/cashwarescript/main/cashware/towerofhell"
+    [{6872265039}] = "https://raw.githubusercontent.com/CashCashInxe/cashwarescript/main/cashware/bedwars"
 }
 
 for ids, url in next, games do
